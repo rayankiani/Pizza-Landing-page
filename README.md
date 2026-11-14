@@ -13,7 +13,6 @@ A modern, responsive, and visually engaging landing page for **Pizza Fiamma**, a
 - **Menu & Showcase**: Highlighted specials, popular pizza categories, and deals.
 - **Customer Reviews**: Testimonial section highlighting real user feedback and 5-star ratings.
 - **Direct Order & Call CTAs**: Quick contact buttons, direct phone call triggers, and location details.
-- **Firebase Ready**: Pre-configured for seamless deployment with Firebase Hosting.
 
 ---
 
@@ -23,7 +22,6 @@ A modern, responsive, and visually engaging landing page for **Pizza Fiamma**, a
 - **CSS3**: Custom variables, Flexbox, Grid, keyframe animations, and media queries.
 - **JavaScript (ES6+)**: Vanilla DOM manipulation, scroll event listeners, and count-up animations.
 - **Icons & Fonts**: Font Awesome 6 and Google Fonts (Poppins).
-- **Hosting**: Firebase Hosting (`firebase.json` and `.firebaserc`).
 
 ---
 
@@ -31,47 +29,36 @@ A modern, responsive, and visually engaging landing page for **Pizza Fiamma**, a
 
 ```text
 Pizza website/
-├── .firebase/              # Local Firebase hosting cache (git-ignored)
-├── public/                 # Static web assets
-│   ├── index.html          # Main landing page markup
-│   ├── style.css           # Styling, themes, and animations
-│   └── script.js           # Client-side interactions & animations
-├── .firebaserc             # Firebase project configuration
-├── .gitignore              # Git ignore rules
-├── firebase.json           # Firebase hosting rules
-└── README.md               # Project documentation
+├── index.html          # Main landing page markup
+├── style.css           # Styling, themes, and animations
+├── script.js           # Client-side interactions & animations
+├── .gitignore          # Git ignore rules
+└── README.md           # Project documentation
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Run Locally
-You can run the project locally with any static web server:
+### Run Locally
+You can run the project locally in any of the following ways:
 
-- **VS Code Live Server**: Right-click `public/index.html` and select **"Open with Live Server"**.
-- **Python**:
+- **Direct in Browser**: Double-click `index.html` to open directly in your web browser.
+- **VS Code Live Server**: Right-click `index.html` and select **"Open with Live Server"**.
+- **Python Local Server**:
   ```bash
-  cd public
   python -m http.server 8000
   ```
   Then open `http://localhost:8000` in your browser.
 
-- **Firebase CLI**:
-  ```bash
-  firebase serve
-  ```
+---
 
-### 2. Deploy to Firebase Hosting
-If you have the Firebase CLI installed and logged in:
+## 🌐 Deploy to GitHub Pages
 
-```bash
-# Login to Firebase
-firebase login
-
-# Deploy the website
-firebase deploy
-```
+1. Push this repository to GitHub.
+2. Go to **Settings** > **Pages** in your GitHub repository.
+3. Under **Branch**, select `main` and root `/`, then click **Save**.
+4. Your website will be live at `https://<username>.github.io/<repo-name>/`.
 
 ---
 
